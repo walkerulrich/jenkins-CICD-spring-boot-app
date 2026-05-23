@@ -8,7 +8,7 @@ data "aws_eip" "eip" {
 }
 
 resource "aws_instance" "myec2" {
-  ami           = "ami-067ec4a660257c294"
+  ami           = "ami-0a59ec92177ec3fad"
   instance_type = var.instance_type
   key_name      = "devops-cicd-jenkins"
   tags = var.aws_common_tag
