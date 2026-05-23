@@ -5,7 +5,7 @@ provider "aws" {
 terraform {
   backend "s3" {
     region     = "us-east-1"
-    bucket = "terraform-jenkins-cicd"
+    bucket = "terraform-jenkins-cicd-s3"
     key = "cicd-staging.fstate"
   }
 }
