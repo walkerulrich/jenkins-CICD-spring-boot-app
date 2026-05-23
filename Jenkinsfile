@@ -84,7 +84,7 @@ pipeline {
         }
 
 
-        stage ('IAC Staging  on aws') { 
+        stage ('IAC Staging  Deployment') { 
             when {
                 expression { GIT_BRANCH == 'origin/deployment' }
             }
